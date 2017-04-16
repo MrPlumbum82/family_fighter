@@ -48,7 +48,7 @@ public class GamePanel extends JPanel implements Runnable, KeyListener {
 
 	private void init() {
 		image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
-		g = (Graphics2D) image.getGraphics();
+		g = (Graphics2D) image.createGraphics();
 		running = true;
 
 		gsm = new GameStateManager();
